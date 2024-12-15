@@ -115,7 +115,7 @@ private fun MarketCardPreview() {
             name = "Mercado",
             description = "Mercado descrição muito barato",
             coupons = 10,
-            rules = emptyList(),
+            //rules = emptyList(),
             latitude = -12.32323123123,
             longitude = -46.234234242,
             address = "Av. Paulista - Bela Vista",

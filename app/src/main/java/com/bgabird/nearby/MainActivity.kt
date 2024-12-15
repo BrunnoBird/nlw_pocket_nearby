@@ -6,14 +6,18 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.internal.composableLambda
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
+import com.bgabird.nearby.data.model.Market
+import com.bgabird.nearby.ui.screen.HomeScreen
+import com.bgabird.nearby.ui.screen.MarketDetailsScreen
 import com.bgabird.nearby.ui.screen.SplashScreen
 import com.bgabird.nearby.ui.screen.WelcomeScreen
+import com.bgabird.nearby.ui.screen.route.Home
 import com.bgabird.nearby.ui.screen.route.Splash
 import com.bgabird.nearby.ui.screen.route.Welcome
 import com.rocketseat.nlw.nearby.ui.theme.NearbyTheme
@@ -38,18 +42,28 @@ class MainActivity : ComponentActivity() {
                         )
                     }
                     composable<Welcome> {
-                        WelcomeScreen()
+                        WelcomeScreen(onNavigateToHome = {
+                            navController.navigate(Home)
+                        })
+                    }
+                    composable<Home> {
+                        HomeScreen(
+                            onNavigateToMarketDetails = { selectedMarket ->
+                                navController.navigate(selectedMarket)
+                            }
+                        )
+                    }
+                    composable<Market> {
+                        val selectedMarket = it.toRoute<Market>()
+                        MarketDetailsScreen(
+                            market = selectedMarket,
+                            onNavigateBack = {
+                                navController.popBackStack()
+                            }
+                        )
                     }
                 }
             }
         }
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    NearbyTheme {
-
     }
 }
