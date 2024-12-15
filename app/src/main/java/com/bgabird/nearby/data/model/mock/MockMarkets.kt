@@ -1,15 +1,19 @@
 package com.bgabird.nearby.data.model.mock
 
+import androidx.compose.ui.tooling.preview.datasource.LoremIpsum
 import com.bgabird.nearby.data.model.Market
+
+val loremIpsum = LoremIpsum(25)
+val words = loremIpsum.values
 
 val mockMarkets = listOf(
     Market(
         id = "1",
         categoryId = "1",
         name = "Mercado",
-        description = "Mercado descrição muito barato",
+        description = "Mercado descrição muito barato, ${words.joinToString(" ")}",
         coupons = 10,
-        rules = emptyList(),
+        rules = mockRules,
         latitude = -12.32323123123,
         longitude = -46.234234242,
         address = "Av. Paulista - Bela Vista",
