@@ -1,0 +1,388 @@
+#Arquivos e diretórios gerados pelo Android Studio
+.idea/
+*.iml
+.gradle/*
+/local.properties
+/.idea/inspectionProfiles/Project_Default.xml
+/build/
+/captures/
+
+# Arquivos específicos do Kotlin
+*.class
+*.kotlin_module
+
+#Arquivos específicos do Compose
+*.previewdata
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log
+*.log
+
+# Arquivos de backup
+*.bak
+*.swp
+
+# Arquivos temporários
+*.tmp
+
+# Arquivos de configuração local
+local.properties
+
+# Arquivos de chave de API
+*.jks
+*.keystore
+
+# Arquivos de configuração de execução
+*.pro
+*.properties
+
+# Arquivos de configuração de compilação
+*.xcconfig
+
+# Arquivos de configuração de teste
+*.xcuserstate
+
+# Arquivosde configuração de interface do usuário
+*.storyboard
+*.xib
+
+# Arquivos de configuração de projeto
+*.pbxproj
+
+# Arquivos de configuração de controle de versão
+*.gitattributes
+
+# Arquivos de configuração de editor
+*.editorconfig
+
+# Arquivos de configuração de formatação de código
+*.clang-format
+
+# Arquivos de configuração de análise estática de código
+*.swiftlint.yml
+
+# Arquivos de configuração de testes de unidade
+*.xctestplan
+
+# Arquivos de configuração de testes de interface do usuário
+*.uitest
+
+# Arquivos de configuração de integração contínua
+*.travis.yml
+*.circleci/config.yml
+
+# Arquivos de configuração de implantação
+*.appstoreconnect/
+
+# Arquivos de configuração de documentação
+*.jazzy.yaml
+
+# Arquivos de configuração de análise de código
+*.codecov.yml
+
+# Arquivos de configuração de gerenciamento de dependências
+*.carthage/
+*.package.resolved
+*.xcworkspace/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.podspec
+*.podfile
+*.podfile.lock
+*.xcuserdata/
+
+# Arquivos de configuração de ferramentasde desenvolvimento
+*.vscode/
+*.idea/workspace.xml
+
+# Arquivos de configuração de ferramentas de build
+*.xcarchive/
+*.dSYM/
+
+# Arquivos de configuração de ferramentas de teste
+*.testresult/
+
+# Arquivos de configuração de ferramentas de implantação
+*.ipa/
+
+# Arquivos de configuração de ferramentas de documentação
+*.docset/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.html/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.build/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.framework/
+*.bundle/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcuserdatad/
+
+# Arquivos de configuração de ferramentas de build
+*.xcactivitylog/
+
+# Arquivos de configuração de ferramentas de teste
+*.xctestrun/
+
+# Arquivos de configuração de ferramentas de implantação
+*.archive/
+
+# Arquivos de configuração de ferramentas de documentação
+*.javadoc/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.pmd/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.xcframework/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.a/
+*.dylib/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcdebugger/
+
+# Arquivos de configuração de ferramentas de build
+*.xcbuilddata/
+
+# Arquivos de configuração de ferramentas de teste
+*.xccov/
+
+# Arquivos de configuração de ferramentas de implantação
+*.dsym/
+
+# Arquivos de configuração de ferramentas de documentação
+*.doxygen/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.findbugs/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.swiftpm/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.tbd/
+*.bcsymbolmap/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcrun/
+
+# Arquivos de configuração de ferramentas de build
+*.xcresultbundle/
+
+# Arquivos de configuração de ferramentas de teste
+*.xctestconfiguration/
+
+# Arquivos de configuração de ferramentas de implantação
+*.mobileprovision/
+
+# Arquivos de configuração de ferramentas de documentação
+*.headerdoc/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.oclint/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências*.spm/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.so/
+*.la/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcodeproj/project.xcworkspace/
+
+# Arquivos de configuração de ferramentas de build
+*.xcconfig/
+
+# Arquivos de configuração de ferramentas de teste
+*.xcschememanagement.plist/
+
+# Arquivos de configuração de ferramentas de implantação
+*.xcarchive/
+
+# Arquivos de configuração de ferramentas de documentação
+*.docset/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.html/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.build/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.framework/
+*.bundle/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcuserdatad/
+
+# Arquivos de configuração de ferramentas de build
+*.xcactivitylog/
+
+# Arquivos de configuração de ferramentas de teste
+*.xctestrun/
+
+# Arquivos de configuração de ferramentas de implantação
+*.archive/
+
+# Arquivos de configuração de ferramentas de documentação
+*.javadoc/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.pmd/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.xcframework/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.a/
+*.dylib/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcdebugger/
+
+# Arquivos de configuração de ferramentas de build
+*.xcbuilddata/
+
+# Arquivos de configuração de ferramentas de teste
+*.xccov/
+
+# Arquivos de configuração de ferramentas de implantação
+*.dsym/
+
+# Arquivos de configuração de ferramentas de documentação
+*.doxygen/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.findbugs/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.swiftpm/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.tbd/
+*.bcsymbolmap/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcrun/
+
+# Arquivos de configuração de ferramentas de build
+*.xcresultbundle/
+
+# Arquivos de configuração de ferramentas de teste
+*.xctestconfiguration/
+
+# Arquivos de configuração de ferramentas de implantação
+*.mobileprovision/
+
+# Arquivos de configuração de ferramentas de documentação
+*.headerdoc/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.oclint/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.spm/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.so/
+*.la/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcodeproj/project.xcworkspace/
+
+# Arquivos de configuração de ferramentas de build
+*.xcconfig/
+
+# Arquivos de configuração de ferramentas de teste
+*.xcschememanagement.plist/
+
+# Arquivos de configuração de ferramentas de implantação
+*.xcarchive/
+
+# Arquivos de configuração de ferramentas de documentação
+*.docset/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.html/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.build/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.framework/
+*.bundle/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcuserdatad/
+
+# Arquivos de configuração de ferramentas de build
+*.xcactivitylog/
+
+# Arquivos de configuração de ferramentas de teste
+*.xctestrun/
+
+# Arquivos de configuração de ferramentas de implantação
+*.archive/
+
+# Arquivos de configuração de ferramentas de documentação
+*.javadoc/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.pmd/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.xcframework/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.a/
+*.dylib/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcdebugger/
+
+# Arquivos de configuração de ferramentas de build
+*.xcbuilddata/
+
+# Arquivos de configuração de ferramentas de teste
+*.xccov/
+
+# Arquivos de configuração de ferramentas de implantação
+*.dsym/
+
+# Arquivos de configuração de ferramentas de documentação
+*.doxygen/
+
+# Arquivos de configuração de ferramentas de análise de código
+*.findbugs/
+
+# Arquivos de configuração de ferramentas de gerenciamento de dependências
+*.swiftpm/
+
+# Arquivos de configuração de ferramentas de terceiros
+*.tbd/
+*.bcsymbolmap/
+
+# Arquivos de configuração de ferramentas de desenvolvimento
+*.xcrun/
+
+# Arquivos de configuração de ferramentas de build
+*.xcresultbundle/
+
+# Arquivos de configuração de ferramentas de teste
+*.xctestconfiguration/
+
+# Arquivos de configuraçãode ferramentas de implantação
+*.mobileprovision/
+
+# Arquivos de configuração de ferramentas de documentação
+*.headerdoc/
+
+# Arquivos de configuração
