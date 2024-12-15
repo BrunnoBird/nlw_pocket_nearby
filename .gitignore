@@ -6,6 +6,7 @@
 /.idea/inspectionProfiles/Project_Default.xml
 /build/
 /captures/
+app/build/*
 
 # Arquivos específicos do Kotlin
 *.class
