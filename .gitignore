@@ -98,6 +98,9 @@ local.properties
 *.vscode/
 *.idea/workspace.xml
 
+/.idea/
+/.gradle/
+
 # Arquivos de configuração de ferramentas de build
 *.xcarchive/
 *.dSYM/
