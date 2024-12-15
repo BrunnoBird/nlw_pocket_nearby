@@ -74,6 +74,7 @@ android {
 
 dependencies {
 
+    implementation(libs.navigation.compose)
     implementation(libs.coil.compose)
     implementation(libs.maps.compose)
     implementation(libs.androidx.core.ktx)
