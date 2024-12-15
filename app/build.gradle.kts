@@ -3,6 +3,7 @@ import java.util.Properties
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("plugin.serialization") version "2.0.21"
 }
 
 android {
@@ -74,6 +75,7 @@ android {
 
 dependencies {
 
+    implementation(libs.kotlin.serialization)
     implementation(libs.navigation.compose)
     implementation(libs.coil.compose)
     implementation(libs.maps.compose)
