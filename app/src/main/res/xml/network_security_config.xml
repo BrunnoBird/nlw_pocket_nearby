@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Camada de segurança onde todos os emuladores que estiverem rodando na minha maquina irá apontar para este dominio quando consumo de API local
+ela é usada no AndroidManifest
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!--
+        Uso para rodar em emulador
+        -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <!--
+        Uso para rodar em dispositivo fixo, pegar o IP
+        -->
+        <domain includeSubdomains="true">192.168.0.180</domain>
+    </domain-config>
+</network-security-config>

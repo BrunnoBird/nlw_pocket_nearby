@@ -1,4 +1,4 @@
-package com.bgabird.nearby.ui.screen.route
+package com.bgabird.nearby.ui.route
 
 import kotlinx.serialization.Serializable
 

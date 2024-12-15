@@ -1,6 +1,5 @@
 package com.bgabird.nearby.ui.components.market
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -22,11 +21,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil3.ImageLoader
+import coil3.compose.AsyncImage
 import com.bgabird.nearby.R
 import com.bgabird.nearby.data.model.Market
 import com.bgabird.nearby.ui.theme.Gray100
@@ -42,6 +44,9 @@ fun MarketCard(
     market: Market,
     onClick: (Market) -> Unit
 ) {
+    val imageLoader = ImageLoader.Builder(LocalContext.current)
+        .build()
+
     Card(
         modifier = modifier
             .clip(RoundedCornerShape(12.dp))
@@ -59,14 +64,15 @@ fun MarketCard(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            Image(
+            AsyncImage(
                 modifier = Modifier
                     .clip(RoundedCornerShape(12.dp))
                     .fillMaxWidth(0.3f)
                     .height(IntrinsicSize.Min)
                     .aspectRatio(ratio = 1f, matchHeightConstraintsFirst = true),
                 contentScale = ContentScale.Crop,
-                painter = painterResource(id = R.drawable.img_burger),
+                model = market.cover,
+                imageLoader = imageLoader,
                 contentDescription = "Imagem do estabelecimento"
             )
             Column {
