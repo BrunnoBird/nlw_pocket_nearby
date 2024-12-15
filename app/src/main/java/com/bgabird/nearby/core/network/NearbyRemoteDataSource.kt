@@ -21,8 +21,8 @@ object NearbyRemoteDataSource {
     // - gerar cupom a partir da leitura do QRcode
 
     suspend fun getCategories(): Result<List<Category>> = try {
-        val categories =
-            httpClientAndroid.get("$BASE_URL/categories").body<List<Category>>()
+        val categories = httpClientAndroid.get("$BASE_URL/categories")
+            .body<List<Category>>()
 
         Result.success(categories)
     } catch (e: Exception) {
@@ -30,29 +30,29 @@ object NearbyRemoteDataSource {
     }
 
     suspend fun getMarkets(categoryId: String): Result<List<Market>> = try {
-        val markets =
-            httpClientAndroid.get("$BASE_URL/markets/category/$categoryId").body<List<Market>>()
+        val markets = httpClientAndroid.get("$BASE_URL/markets/category/${categoryId}")
+            .body<List<Market>>()
 
         Result.success(markets)
     } catch (e: Exception) {
         Result.failure(e)
     }
 
-    suspend fun getMarketsDetails(marketId: String): Result<MarketDetails> = try {
-        val marketDetails =
-            httpClientAndroid.get("$BASE_URL/markets/$marketId").body<MarketDetails>()
+    suspend fun getMarketDetails(marketId: String): Result<MarketDetails> = try {
+        val market = httpClientAndroid.get("$BASE_URL/markets/${marketId}")
+            .body<MarketDetails>()
 
-        Result.success(marketDetails)
+        Result.success(market)
     } catch (e: Exception) {
         Result.failure(e)
     }
 
     suspend fun patchCoupon(marketId: String): Result<Coupon> = try {
-        val coupon = httpClientAndroid.patch("$BASE_URL/coupons/$marketId").body<Coupon>()
+        val coupon = httpClientAndroid.patch("$BASE_URL/coupons/${marketId}")
+            .body<Coupon>()
 
         Result.success(coupon)
     } catch (e: Exception) {
         Result.failure(e)
     }
-
 }

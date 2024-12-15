@@ -44,9 +44,6 @@ fun MarketCard(
     market: Market,
     onClick: (Market) -> Unit
 ) {
-    val imageLoader = ImageLoader.Builder(LocalContext.current)
-        .build()
-
     Card(
         modifier = modifier
             .clip(RoundedCornerShape(12.dp))
@@ -65,15 +62,14 @@ fun MarketCard(
             horizontalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             AsyncImage(
+                model = market.cover,
                 modifier = Modifier
                     .clip(RoundedCornerShape(12.dp))
                     .fillMaxWidth(0.3f)
                     .height(IntrinsicSize.Min)
                     .aspectRatio(ratio = 1f, matchHeightConstraintsFirst = true),
                 contentScale = ContentScale.Crop,
-                model = market.cover,
-                imageLoader = imageLoader,
-                contentDescription = "Imagem do estabelecimento"
+                contentDescription = "Imagem do Estabelecimento"
             )
             Column {
                 Text(text = market.name, style = Typography.headlineSmall.copy(fontSize = 14.sp))
@@ -86,7 +82,6 @@ fun MarketCard(
                     style = Typography.bodyLarge.copy(fontSize = 12.sp)
                 )
                 Spacer(modifier = Modifier.height(16.dp))
-
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -94,10 +89,8 @@ fun MarketCard(
                     Icon(
                         modifier = Modifier.size(24.dp),
                         tint = if (market.coupons > 0) RedBase else Gray400,
-                        painter = painterResource(
-                            id = R.drawable.ic_ticket
-                        ),
-                        contentDescription = "ícone de cupom"
+                        painter = painterResource(id = R.drawable.ic_ticket),
+                        contentDescription = "Ícone de Cupom"
                     )
                     Text(
                         text = "${market.coupons} cupons disponíveis",

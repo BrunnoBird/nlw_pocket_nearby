@@ -28,7 +28,9 @@ fun MarketCardList(
         items(items = markets, key = { it.id }) { market ->
             MarketCard(
                 market = market,
-                onClick = { onMarketClick(market) }
+                onClick = {
+                    onMarketClick(market)
+                }
             )
         }
     }

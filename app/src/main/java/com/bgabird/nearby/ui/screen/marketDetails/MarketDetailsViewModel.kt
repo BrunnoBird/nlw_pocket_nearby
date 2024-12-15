@@ -43,7 +43,7 @@ class MarketDetailsViewModel : ViewModel() {
 
     private fun fetchRules(marketId: String) {
         viewModelScope.launch {
-            NearbyRemoteDataSource.getMarketsDetails(marketId = marketId)
+            NearbyRemoteDataSource.getMarketDetails(marketId = marketId)
                 .onSuccess { marketDetails ->
                     _uiState.update { currentUiState ->
                         currentUiState.copy(

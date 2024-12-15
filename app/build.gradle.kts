@@ -82,6 +82,8 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
     implementation(libs.maps.compose)
+    implementation(libs.zxing)
+    implementation(libs.zxing.android.embedded)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
