@@ -97,6 +97,7 @@ local.properties
 # Arquivos de configuração de ferramentasde desenvolvimento
 *.vscode/
 *.idea/workspace.xml
+*.idea/*
 
 # Arquivos de configuração de ferramentas de build
 *.xcarchive/
